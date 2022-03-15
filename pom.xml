@@ -14,6 +14,8 @@
         <module>mapper</module>
         <module>privoder</module>
         <module>password</module>
+        <module>config</module>
+        <module>nacos_config</module>
     </modules>
     <!-- Spring Boot的父项目，声明所有Spring Boot相关版本 -->
     <parent>
@@ -119,6 +121,7 @@
                 <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
                 <version>${nacos-config-version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
