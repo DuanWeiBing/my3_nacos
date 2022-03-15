@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nacos.mapper.UserMapper"><!--   接口的路径-->
+
+    <select id="selBy" resultType="com.nacos.pojo.Users">
+        <!--   如果传过来的是一个实体类的就写实体类的字段名，如果是基本数据类型就按参数顺序调用-->
+        select * from users where username = #{param1} and password=#{param2}
+    </select>
+    <select id="selAll" resultType="com.nacos.pojo.Users">
+        <!--   如果传过来的是一个实体类的就写实体类的字段名，如果是基本数据类型就按参数顺序调用-->
+        select * from users
+    </select>
+
+</mapper>
